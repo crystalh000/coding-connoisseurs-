@@ -13,7 +13,13 @@ Users begin by creating an account and inputting information about themselves. T
 
 Every day, the user will use the app to photograph their food and/or drinks before eating. The app will display data to confirm that the AI got it right, then records the information to the user's account data.
 
-Every week, the user will receive a notification containing their weekly summary of nutrtitional intake and how well they did compared to the healthy ranges for their demographic. The app will give suggestions for what foods to try and eat more of to make up nutritional deficiencies, or recommend cutbacks for foods that contain too much of a category. The summary would also contain information on progress toward goals, if the user has set any.
+Every week, the user will receive a notification containing their weekly summary of nutrtitional intake and how well they did compared to the healthy ranges for their demographic. The app will give suggestions for what foods to try and eat more of to make up nutritional deficiencies, or recommend cutbacks for foods that contain too much of a nutritional category. The summary would also contain information on progress toward goals, if the user has set any.
+
+## Implementation
+
+We use HTML and Javascript to set up a website where users log in. [FRONTENT]
+
+We use a food distinguishing AI to process photos that the user uploads. This is done through [SOMETHING] API in Python. After user confirmation, the nutritional data, photo, and other data are written to a file. At the end of the week, the file is iteratively read and processed algorithmically. We calculate the expected/healthy ranges for each nutrition field and display it next to the user's intake for that week. For every value outside of the range, we will check what foods from the week contributed too much, or what foods to eat more of to get into range. The weekly data is then moved to another file for archival, only to be accessed if the user wants to look back. The app is now ready to record data again.
 
 ## If we had more time
 
