@@ -12,4 +12,4 @@ TODO
 
 ## If we had more time
 
-TODO
+We would like to expand the app to cover more aspects of health, such as movement/activity data, and help users better track their other habits alongside their nutritianal data. This would help them maintain awareness about their lifestyle's healthiness and lets the app provide recommendations for how to reach their goals.
