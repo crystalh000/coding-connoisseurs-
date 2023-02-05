@@ -19,10 +19,10 @@ class AI:
             for i in range(3):
                 sum[i] += pixel[i]
         sum = [sum[i]/count for i in range(3)]
-        
+        print(sum)
         # Use the pixel as an input for the AI
-        colors = ["#342a1d", "#3d4138", "#1d140e", "#413725"]
-        categories = ["fruit", "vegetable", "meat", "bread"]
+        colors = ["#342a1d", "#3d4138", "#1d140e", "#413725", "#46403d"]
+        categories = ["fruit", "vegetable", "meat", "bread", "meat"]
         errors = []
         for k in colors:
             rgb = hex_to_list(k)
@@ -30,4 +30,11 @@ class AI:
             for i in range(3):
                 total += (sum[i]-rgb[i])**2
             errors.append(total)
-        return categories[errors.index(min(errors))]
+            print(categories[colors.index(k)], errors[-1])
+            print()
+        minimum = min(errors)
+        index = errors.index(minimum)
+        original = 0
+        for i in hex_to_list(colors[index]):
+            original += i**2
+        return categories[index], 1 - minimum**.5/original**.5

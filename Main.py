@@ -1,7 +1,8 @@
 from AI import AI
 from PIL import Image
 
-im = Image.open("Test_Images/vege.jpg")
+im = Image.open("Test_Images/img.jpg")
 im = list(im.getdata())
 a = AI(im)
-print(a.classify())
+category, diff = a.classify()
+print(category, diff*100)
