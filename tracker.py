@@ -1,6 +1,5 @@
 import streamlit as st
 import os
-import utils as utl
 #import tensorflow as tf
 import os
 from AI import AI
