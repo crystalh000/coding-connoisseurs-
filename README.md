@@ -23,7 +23,7 @@ We use a food distinguishing AI to process photos that the user uploads. This is
 
 ## If we had more time
 
-We would train a gradient descent AI to take in an array as input and then return an integer ass output. This integer will correspond to an index in a multi-dimentional array sorted by categories of food where closer categories are closer together in index position. This allows the error to be helpful to the AI in training. We would also train it to determine the quantity of food eaten.
+We would train a gradient descent AI to take in an array as input and then return an integer as output. This integer will correspond to an index in a multi-dimentional array sorted by categories of food where closer categories are closer together in index position. This allows the error to be helpful to the AI in training. We would also train it to determine the quantity of different food categories in each photo and get a more precise identification of the type of meat, vegetable, etc...
 
 We would like to expand the app to cover more aspects of health, such as movement/activity data, and help users better track their other habits alongside their nutritianal data. This would help them maintain awareness about their lifestyle's healthiness and lets the app provide recommendations for how to reach their goals.
 
