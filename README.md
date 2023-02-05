@@ -19,7 +19,12 @@ Every week, the user will receive a notification containing their weekly summary
 
 We use HTML and Javascript to set up a website where users log in. [FRONTENT]
 
-We use a food distinguishing AI to process photos that the user uploads. This is done through our stand-in AI in Python (since we do not have enough time to train a model). Instead, we will use a pseudo-AI that knows the colors of a small selection of food categories and compares the photo to known examples. After user confirmation, the category data, photo, and other data are written to a file. At the end of the week, the file is iteratively read and processed algorithmically. We calculate the expected/healthy ranges for each nutrition field and display it next to the user's intake for that week. For every value outside of the range, we will check what foods from the week contributed too much, or what foods to eat more of to get into range. The weekly data is then moved to another file for archival, only to be accessed if the user wants to look back. The app is now ready to record data again.
+We use a food distinguishing AI to process photos that the user uploads. This is done through our stand-in AI in Python (since we do not have enough time to train a model). Instead, we will use a pseudo-AI that knows the colors of a small selection of food categories and compares the photo to known examples (train_ai.py). After user confirmation, the category data, photo, and other data are written to a file. At the end of the week, the file is iteratively read and processed algorithmically. We calculate the expected/healthy ranges for each nutrition field and display it next to the user's intake for that week. For every value outside of the range, we will check what foods from the week contributed too much, or what foods to eat more of to get into range. The weekly data is then moved to another file for archival, only to be accessed if the user wants to look back. The app is now ready to record data again.
+
+train_ai.py contains code to generate an "AI" trained off of a small set of 10 images for each category, meant to be a substitute for a read AI.
+    - Test_Images contains test images for training
+Main.py contains the main code that will interface with the backend.
+AI.py contains code for an AI to categorize an image.
 
 ## If we had more time
 
