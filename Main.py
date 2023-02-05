@@ -18,3 +18,5 @@ def move_weekly():
                 archive.write(line)
     with open("weekly.txt", "w"):
         pass
+
+move_weekly()
