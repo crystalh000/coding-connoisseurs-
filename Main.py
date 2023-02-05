@@ -1,11 +1,11 @@
 from AI import AI
 from PIL import Image
 
-im = Image.open("Test_Images/img.jpg")
+im = Image.open("img.jpg")
 im = list(im.getdata())
 a = AI(im)
-category, diff = a.classify()
-print(category, diff*100)
+category, error = a.classify()
+print(category)
 
 with open("weekly.txt", "a") as f:
     f.write(category)
