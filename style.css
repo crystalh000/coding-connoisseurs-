@@ -101,6 +101,13 @@ input[type=text] {
   height: auto;
 }
 
+.logo2{
+  position: relative;
+  top: 62px;
+  width: 200px;  
+  height: auto;
+}
+
 .info-form{
   position: relative;
   top: 25px;
