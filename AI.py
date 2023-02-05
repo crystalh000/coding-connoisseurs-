@@ -19,9 +19,9 @@ class AI:
             for i in range(3):
                 sum[i] += pixel[i]
         sum = [sum[i]/count for i in range(3)]
-        print(sum)
+        
         # Use the pixel as an input for the AI
-        colors = ["#342a1d", "#3d4138", "#453f3c", "#413725"]
+        colors = ["#342a1d", "#3d4138", "#1d140e", "#413725"]
         categories = ["fruit", "vegetable", "meat", "bread"]
         errors = []
         for k in colors:
