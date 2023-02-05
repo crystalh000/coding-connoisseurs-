@@ -5,18 +5,15 @@ import os
 from AI import AI
 from PIL import Image
 
-
-
 #categories of food
 catgories = ['chicken', 'rice', 'broccoli', 'ramen', 'kale']
 
 
 def app():
-    st.title("Food Recognition App")
-    st.write("""
-    # Pictrition
-    # Weekly Diet Tracker
-    # """)
+    st.title("Pictrition")
+    st.header("Your Weekly Diet Tracker")
+
+    
    #load the CSS
     # Reading the HTML file
     with open("howitworks.html", "r") as file:
