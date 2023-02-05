@@ -7,7 +7,7 @@ A poor diet and lack of nutrition can lead to detrimental effects on one's healt
 
 Our app attempts to ease the amount of labor involved in the process by only requiring the user to photograph their meals through the app. Then we use AI photo analysis to extract and record nutritional information from each meal, and run a data analysis algorithms to provide feedback on their nutritional intake after set time intervals. Users will also be able to manually input nutritional and personal information or goals to further improve the accuracy of recommendations.
 
-## User side
+## User experience
 
 Users begin by creating an account and inputting information about themselves. Then we will introduce the app throguh a tutorial, including how to use its features and what to do every day.
 
@@ -19,7 +19,7 @@ Every week, the user will receive a notification containing their weekly summary
 
 We use HTML and Javascript to set up a website where users log in. [FRONTENT]
 
-We use a food distinguishing AI to process photos that the user uploads. This is done through our stand-in AI in Python (since we do not have enough time to train a model). Instead, we will use a pseudo-AI that knows the colors of a small selection of food categories and compares the photo to known examples. After user confirmation, the nutritional data, photo, and other data are written to a file. At the end of the week, the file is iteratively read and processed algorithmically. We calculate the expected/healthy ranges for each nutrition field and display it next to the user's intake for that week. For every value outside of the range, we will check what foods from the week contributed too much, or what foods to eat more of to get into range. The weekly data is then moved to another file for archival, only to be accessed if the user wants to look back. The app is now ready to record data again.
+We use a food distinguishing AI to process photos that the user uploads. This is done through our stand-in AI in Python (since we do not have enough time to train a model). Instead, we will use a pseudo-AI that knows the colors of a small selection of food categories and compares the photo to known examples. After user confirmation, the category data, photo, and other data are written to a file. At the end of the week, the file is iteratively read and processed algorithmically. We calculate the expected/healthy ranges for each nutrition field and display it next to the user's intake for that week. For every value outside of the range, we will check what foods from the week contributed too much, or what foods to eat more of to get into range. The weekly data is then moved to another file for archival, only to be accessed if the user wants to look back. The app is now ready to record data again.
 
 ## If we had more time
 

@@ -45,6 +45,7 @@ class AI:
         food_colors = {'meat': ['393128', '2b1b15', '302923', '301c14', '2015d', '2c211b', '453f3c', '201a17', '201710', '35302d'], 'vegetables': ['211d13', '34361b', '222419', '262512', '312e23', '3d4138', '242511', '383426', '1e2824', '2a20f'], 'fruit': ['342a1d', '221417', '311719', '4223d', '382b1c', '292219', '271d14', '2a251c', '382519', '322318'], 'bread': ['3d362b', '443428', '251e15', '413725', '3d342b', '3f372e', '3a2b1f', '332d29', '332a1b', '2a201c']}
         food_errors = {'meat':[], 'vegetables':[], 'fruit':[], 'bread':[]}
         food_avgs = {'meat':0, 'vegetables':0, 'fruit':0, 'bread':0}
+        minimum_category = 'meat'
         minimum_error = (None, 2**31)
         for k, v in food_colors.items():
             for hex in v:
@@ -55,4 +56,9 @@ class AI:
                 minimum_error = (k, error) if error < minimum_error[1] else minimum_error
                 food_errors[k].append(error)
             food_avgs[k] = sum(food_errors[k])/len(food_errors[k])
-        return minimum_error
+            if food_avgs[k] < food_avgs[minimum_category]:
+                minimum_category = k
+        print(food_errors)
+        print(food_avgs)
+        return minimum_category, food_avgs[minimum_category]
+        # return minimum_error

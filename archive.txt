@@ -6,3 +6,10 @@ fruit
 fruit
 meat
 meat
+meat
+fruit
+fruit
+fruit
+fruit
+fruit
+fruit
