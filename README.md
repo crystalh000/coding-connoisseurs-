@@ -26,7 +26,6 @@ train_ai.py contains code to generate an "AI" trained off of a small set of 10 i
 Main.py contains the main code that will interface with the backend.
 AI.py contains code for an AI to categorize an image.
 
-
 ## If we had more time
 
 We would train a gradient descent AI to take in an array as input and then return an integer as output. This integer will correspond to an index in a multi-dimentional array sorted by categories of food where closer categories are closer together in index position. This allows the error to be helpful to the AI in training. We would also train it to determine the quantity of different food categories in each photo and get a more precise identification of the type of meat, vegetable, etc... This means extracting the exact nutritional values of different nutrients instead of recording the types of food eaten.
