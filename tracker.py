@@ -4,7 +4,7 @@ import os
 import os
 from AI import AI
 from PIL import Image
-import matplotlib.pyplot as plt
+#import matplotlib.pyplot as plt
 
 
 #categories of food
@@ -47,8 +47,8 @@ def app():
             counts = [0 for _ in range(len(indexes))]
             for line in f:
                 counts[indexes[line[:-1]]] += 1
-            plt.pie(counts, labels=list(indexes.keys()))
-            plt.savefig("pie_chart.png")
+            #plt.pie(counts, labels=list(indexes.keys()))
+            #plt.savefig("pie_chart.png")
     analyze_week()
 
 
