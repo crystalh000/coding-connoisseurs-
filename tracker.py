@@ -38,8 +38,8 @@ def app():
         st.write("The food is the image of a(n) {}".format(a.classify()))
     
     with open("weekly.txt", "a") as f:
-    f.write(category)
-    f.write("\n")
+        f.write(category)
+        f.write("\n")
 
     def analyze_week():
         with open("weekly.txt", "r") as f:
