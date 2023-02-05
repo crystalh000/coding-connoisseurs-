@@ -4,8 +4,12 @@
 		<link rel="stylesheet" href="style.css">
 	</head>
 	<body>
-		<div class="title"> [current date]</div>
-		<div class="options">
+		<div class="title">
+		<p>Today: <span id="datetime"></span></p><script>var dt = new Date();
+			document.getElementById("datetime").innerHTML=dt.toLocaleString();</script>
+		</div>
+		<div class = "next-button" onclick="window.location.replace('weeklysurvey.html');">
+			<div class="text-button">Home</div>
 		</div>
 	</body>
 </html>

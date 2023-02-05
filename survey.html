@@ -6,10 +6,37 @@
 	<body>
 		<div class="title"> What brings you here?</div>
 		<form class="info-form">
-			<input type="checkbox" id="eating-healthier">
-			<label for="eating-healthier"> Eating Healthier</label><br>
-			<input type="checkbox" id="losing-weight">
-			<label for="losing-weight"> Losing Weight</label><br>
+			<div class="box">
+				<input type="checkbox" id="eating-healthier">
+				<label for="eating-healthier"> Eating Healthier</label><br>
+			</div>
+			<br>
+			<br>
+			<div class="box">
+				<input type="checkbox" id="losing-weight">
+				<label for="losing-weight"> Losing Weight</label><br>
+			</div>
+			<br>
+			<br>
+			<div class="box" data-control="checkbox-dropdown">
+				<label class="dropdown-label">Gaining Muscle</label>
+				
+				<div class="dropdown-list">
+				  <label class="dropdown-option">
+					<input type="radio" name="dropdown-group" value="Selection 1" />
+					Lose Weight
+				  </label>
+				  
+				  <label class="dropdown-option">
+					<input type="radio" name="dropdown-group" value="Selection 2" />
+					Maintain Weight
+				  </label>
+				  
+				  <label class="dropdown-option">
+					<input type="radio" name="dropdown-group" value="Selection 3" />
+					Gain Weight
+				  </label>
+				</div>
 
 		</form>
 		<div class = "next-button" onclick="window.location.replace('survey2.html');">
