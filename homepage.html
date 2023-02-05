@@ -8,8 +8,20 @@
 		<p>Today: <span id="datetime"></span></p><script>var dt = new Date();
 			document.getElementById("datetime").innerHTML=dt.toLocaleString();</script>
 		</div>
-		<div class = "next-button" onclick="window.location.replace('weeklysurvey.html');">
-			<div class="text-button">Home</div>
+		<form action="upload_file.php" method="post" enctype="multipart/form-data">
+			<input type="file" name="image">
+			<input type="submit" value="Upload Image">
+		</form>
+		upload a photo
+		<br>
+		display photo once uploaded
+		<br>
+		analyze the photo
+		<br>
+
+		<div class = "next-button" onclick="window.location.replace('weeklysummary.html');">
+			<div class="text-button">Try it now!</div>
+		</div>
 		</div>
 	</body>
 </html>
