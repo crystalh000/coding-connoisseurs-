@@ -9,7 +9,7 @@ Our app attempts to ease the amount of labor involved in the process by only req
 
 ## User experience
 
-Users begin by creating an account and inputting information about themselves. Then we will introduce the app throguh a tutorial, including how to use its features and what to do every day.
+Users begin by creating an account and inputting information about themselves. Then we will introduce the app through a tutorial, including how to use its features and what to do every day.
 
 Every day, the user will use the app to photograph their food and/or drinks before eating. The app will display data to confirm that the AI got it right, then records the information to the user's account data.
 
@@ -17,7 +17,7 @@ Every week, the user will receive a notification containing their weekly summary
 
 ## Implementation
 
-We use HTML and Javascript to set up a website where users log in. [FRONTENT]
+We use HTML and Javascript to set up a website where users log in and give their eating goals. Users will then go to the main app interface, where they upload photos and get information about their diet, if the food they are eating is good or bad, and a debrief of their overall diet. The front end of this website has been developed through HTML and CSS.
 
 We use a food distinguishing AI to process photos that the user uploads. This is done through our stand-in AI in Python (since we do not have enough time to train a model). Instead, we will use a pseudo-AI that knows the colors of a small selection of food categories and compares the photo to known examples (train_ai.py). After user confirmation, the category data, photo, and other data are written to a file. At the end of the week, the file is iteratively read and processed algorithmically. We calculate the expected/healthy ranges for each nutrition field and display it next to the user's intake for that week. For every value outside of the range, we will check what foods from the week contributed too much, or what foods to eat more of to get into range. The weekly data is then moved to another file for archival, only to be accessed if the user wants to look back. The app is now ready to record data again.
 
