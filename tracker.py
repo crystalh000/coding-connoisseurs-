@@ -4,6 +4,7 @@ import os
 import os
 from AI import AI
 from PIL import Image
+import matplotlib.pyplot as plt
 
 
 #categories of food
@@ -14,7 +15,6 @@ def app():
     st.title("Pictrition")
     st.header("Your Weekly Diet Tracker")
 
-    
    #load the CSS
     # Reading the HTML file
     # with open("homepage.html", "r") as file:
