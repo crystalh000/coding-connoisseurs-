@@ -5,6 +5,7 @@ import os
 from AI import AI
 from PIL import Image
 
+
 #categories of food
 catgories = ['chicken', 'rice', 'broccoli', 'ramen', 'kale']
 
@@ -33,7 +34,22 @@ def app():
         im = image.resize((224, 224))
         im = list(im.getdata())
         a = AI(im)
+        category, error = a.classify()
         st.write("The food is the image of a(n) {}".format(a.classify()))
+    
+    with open("weekly.txt", "a") as f:
+    f.write(category)
+    f.write("\n")
+
+    def analyze_week():
+        with open("weekly.txt", "r") as f:
+            indexes = {'meat':0, 'vegetable':1, 'bread':2, 'fruit':3}
+            counts = [0 for _ in range(len(indexes))]
+            for line in f:
+                counts[indexes[line[:-1]]] += 1
+            plt.pie(counts, labels=list(indexes.keys()))
+            plt.savefig("pie_chart.png")
+    analyze_week()
 
 
 
